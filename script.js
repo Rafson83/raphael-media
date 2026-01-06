@@ -1,25 +1,16 @@
-// Prosty skrypt JavaScript
+// Skrypt dla strony w budowie
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Raphael Media strona załadowana!');
+    console.log('Raphael Media - strona w budowie załadowana!');
     
-    // Smooth scroll dla linków nawigacji
-    const navLinks = document.querySelectorAll('nav a[href^="#"]');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
-    
-    // Przykład interaktywności - kliknięcie w logo
+    // Animacja logo na hover
     const logo = document.querySelector('.logo');
     if (logo) {
-        logo.addEventListener('click', function() {
-            alert('Witaj w Raphael Media!');
+        logo.addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.1)';
+            this.style.transition = 'transform 0.3s';
+        });
+        logo.addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
         });
     }
 });

@@ -10,84 +10,51 @@ body {
     line-height: 1.6;
     color: #E5E7EB; /* Soft White / Light Gray */
     background-color: #0E1117; /* Deep Graphite / Tech Navy */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-header {
-    background: #0E1117; /* Główny kolor */
-    color: #E5E7EB;
-    padding: 1rem;
+.coming-soon {
     text-align: center;
+    max-width: 600px;
+    padding: 2rem;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    background: transparent; /* Usunięto białe tło dla lepszej integracji */
+    width: 150px;
+    height: 150px;
+    background: transparent;
     object-fit: contain;
     border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav a {
-    color: #3B82F6; /* Electric Blue */
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #6D28D9; /* Deep Violet */
-}
-
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
     margin-bottom: 2rem;
-    padding: 2rem;
-    background: #1a1a1a; /* Ciemniejsze tło dla sekcji */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1); /* Subtelny cień z akcentem */
 }
 
-#home {
-    background: linear-gradient(135deg, #3B82F6, #6D28D9); /* Gradient sygnaturowy */
+.coming-soon h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #3B82F6; /* Electric Blue */
+}
+
+.coming-soon p {
+    font-size: 1.2rem;
     color: #E5E7EB;
-    text-align: center;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, #3B82F6, #6D28D9);
-    color: #E5E7EB;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    transition: opacity 0.3s;
-}
-
-.cta-button:hover {
-    opacity: 0.8;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #0E1117;
-    color: #E5E7EB;
+/* Responsywność */
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+    .coming-soon h1 {
+        font-size: 2rem;
+    }
+    .coming-soon p {
+        font-size: 1rem;
+    }
 }
 
 /* Responsywność */
