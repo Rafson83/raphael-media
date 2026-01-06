@@ -16,6 +16,19 @@ header {
     background: #333;
     color: #fff;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.header-content {
+    flex: 1;
     text-align: center;
 }
 
@@ -58,6 +71,15 @@ footer {
 
 /* Responsywność */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        max-width: 80px;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
     nav ul {
         flex-direction: column;
     }
