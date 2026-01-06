@@ -28,10 +28,6 @@ header {
     margin-bottom: 1rem;
 }
 
-.header-content {
-    /* usunięto, bo header już ma text-align: center */
-}
-
 nav ul {
     list-style: none;
     display: flex;
